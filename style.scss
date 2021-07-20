@@ -1,0 +1,106 @@
+$phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+$primary: #b98420;
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    max-width: $phone;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.user {
+    font-size: 2rem;
+    margin: 0.5rem;
+    font-weight: 300;
+}
+
+h1 {
+    margin: 0.5rem 0;
+
+    span {
+        font-weight: 300;
+        color: $primary;
+        margin: 0.25rem;
+        padding: 0.25rem;
+        padding-right: 0;
+        border: 2px solid $primary;
+        border-radius: 0.5rem 0.5rem 0 0.5rem;
+    }
+
+    small {
+        font-weight: 400;
+        font-size: 1rem;
+        padding-bottom: 0.45rem;
+        border-bottom: 2px solid $primary;
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    font-weight: 400;
+}
+
+.option {
+    margin: 2rem 0.5rem 0;
+
+    & > div {
+        text-align: center;
+        border: 2px solid $primary;
+        border-radius: 0.5rem;
+        padding: 1rem;
+
+        a {
+            font-size: 2rem;
+            margin: 0.5rem;
+            font-weight: 300;
+        }
+
+        .no-one {
+            color: $primary;
+        }
+    }
+}
+
+.passes {
+    margin: 2rem 0.5rem 0;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    li {
+        list-style: none;
+        border: 2px solid $primary;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: $primary;
+        min-width: fit-content;
+
+        & + li {
+            margin-left: 1rem;
+        }
+    }
+}
